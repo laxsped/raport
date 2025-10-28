@@ -39,7 +39,7 @@ MonoBehaviour:
     maximumWaterDecalCount: 48
     waterScriptInteractionsMode: 0
     waterFullCPUSimulation: 0
-    supportComputeThickness: 0
+    supportComputeThickness: 1
     computeThicknessResolution: 1
     computeThicknessLayerMask:
       serializedVersion: 2
@@ -75,15 +75,15 @@ MonoBehaviour:
     supportTerrainHole: 0
     lightProbeSystem: 1
     oldLightProbeSystem: 1
-    probeVolumeMemoryBudget: 1024
-    supportProbeVolumeGPUStreaming: 0
-    supportProbeVolumeDiskStreaming: 0
-    probeVolumeSHBands: 1
-    supportProbeVolumeScenarios: 0
+    probeVolumeMemoryBudget: 2048
+    supportProbeVolumeGPUStreaming: 1
+    supportProbeVolumeDiskStreaming: 1
+    probeVolumeSHBands: 2
+    supportProbeVolumeScenarios: 1
     supportProbeVolumeScenarioBlending: 1
-    probeVolumeBlendingMemoryBudget: 128
+    probeVolumeBlendingMemoryBudget: 512
     supportRayTracing: 1
-    supportVFXRayTracing: 0
+    supportVFXRayTracing: 1
     supportedRayTracingMode: 3
     lightLoopSettings:
       cookieAtlasSize: 512

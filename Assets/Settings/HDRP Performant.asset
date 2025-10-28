@@ -19,7 +19,6 @@ MonoBehaviour:
     supportSSAO: 1
     supportSSGI: 0
     supportSubsurfaceScattering: 1
-    subsurfaceScatteringAttenuation: 1
     sssSampleBudget:
       m_Values: 140000002800000050000000
       m_SchemaId:
@@ -29,13 +28,12 @@ MonoBehaviour:
       m_SchemaId:
         m_Id: With3Levels
     supportVolumetrics: 0
-    supportVolumetricClouds: 0
+    supportVolumetricClouds: 1
     supportLightLayers: 1
     renderingLayerMaskBuffer: 0
     supportWater: 0
     waterSimulationResolution: 128
     supportWaterExclusion: 0
-    supportWaterHorizontalDeformation: 0
     supportWaterDecals: 1
     waterDecalAtlasSize: 1024
     maximumWaterDecalCount: 48
@@ -50,9 +48,8 @@ MonoBehaviour:
     supportTransparentBackface: 1
     supportTransparentDepthPrepass: 1
     supportTransparentDepthPostpass: 1
-    colorBufferFormat: 74
+    colorBufferFormat: 48
     supportCustomPass: 1
-    supportVariableRateShading: 1
     customBufferFormat: 12
     supportedLitShaderMode: 2
     planarReflectionResolution:
@@ -67,8 +64,8 @@ MonoBehaviour:
     supportDecalLayers: 0
     supportSurfaceGradient: 0
     decalNormalBufferHP: 0
-    supportHighQualityLineRendering: 0
-    highQualityLineRenderingMemoryBudget: 128
+    supportHighQualityLineRendering: 1
+    highQualityLineRenderingMemoryBudget: 512
     msaaSampleCount: 1
     supportMotionVectors: 1
     supportScreenSpaceLensFlare: 1
@@ -116,7 +113,7 @@ MonoBehaviour:
       maxDecalsOnScreen: 512
       maxLightsPerClusterCell: 16
       maxLocalVolumetricFogSize: 32
-      maxLocalVolumetricFogOnScreen: 64
+      maxLocalVolumetricFogOnScreen: 1
     hdShadowInitParams:
       maxShadowRequests: 128
       directionalShadowsDepthBits: 16
@@ -226,7 +223,7 @@ MonoBehaviour:
       BloomRes: 040000000200000002000000
       BloomHighQualityFiltering: 000101
       BloomHighQualityPrefiltering: 000001
-      ChromaticAberrationMaxSamples: 03000000060000000c000000
+      ChromaticAberrationMaxSamples: 030000000600000018000000
     lightSettings:
       useContactShadow:
         m_Values: 000101
@@ -245,7 +242,7 @@ MonoBehaviour:
         m_Id: With3Levels
     lightingQualitySettings:
       AOStepCount: 030000000400000006000000
-      AOFullRes: 000000
+      AOFullRes: 000001
       AOMaximumRadiusPixels: 180000002000000020000000
       AOBilateralUpsample: 000000
       AODirectionCount: 010000000100000002000000
@@ -550,4 +547,3 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 11400000, guid: 2b7005ba3a4d8474b8cdc34141ad766e, type: 2}
   m_PrefilterUseLegacyLightmaps: 0
-  m_PrefilterUseLightmapBicubicSampling: 0
