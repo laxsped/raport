@@ -27,12 +27,12 @@ MonoBehaviour:
       m_Values: 000000000000000000000000
       m_SchemaId:
         m_Id: With3Levels
-    supportVolumetrics: 0
+    supportVolumetrics: 1
     supportVolumetricClouds: 1
     supportLightLayers: 1
     renderingLayerMaskBuffer: 0
-    supportWater: 0
-    waterSimulationResolution: 128
+    supportWater: 1
+    waterSimulationResolution: 64
     supportWaterExclusion: 0
     supportWaterDecals: 1
     waterDecalAtlasSize: 1024
@@ -113,7 +113,7 @@ MonoBehaviour:
       maxDecalsOnScreen: 512
       maxLightsPerClusterCell: 16
       maxLocalVolumetricFogSize: 32
-      maxLocalVolumetricFogOnScreen: 1
+      maxLocalVolumetricFogOnScreen: 4
     hdShadowInitParams:
       maxShadowRequests: 128
       directionalShadowsDepthBits: 16
