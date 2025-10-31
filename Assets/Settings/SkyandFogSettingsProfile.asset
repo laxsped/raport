@@ -823,7 +823,7 @@ MonoBehaviour:
     m_Value: {r: 0.7169812, g: 0.7169812, b: 0.7169812, a: 1}
   balance:
     m_OverrideState: 1
-    m_Value: -18
+    m_Value: -30
 --- !u!114 &-2143961566940092467
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -849,6 +849,22 @@ MonoBehaviour:
   m_MaxSamples:
     m_OverrideState: 1
     m_Value: 12
+--- !u!114 &-1938362934226297327
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f1984a7ac01bf84b86559f7595cdc68, type: 3}
+  m_Name: LightCluster
+  m_EditorClassIdentifier: 
+  active: 0
+  cameraClusterRange:
+    m_OverrideState: 1
+    m_Value: 10
 --- !u!114 &-1339068831248592880
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -913,6 +929,8 @@ MonoBehaviour:
   - {fileID: 7292801588908628378}
   - {fileID: -4606050601325725336}
   - {fileID: 1989115387857562448}
+  - {fileID: -1938362934226297327}
+  - {fileID: 2325148130179702663}
 --- !u!114 &1142777632297148762
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1019,6 +1037,55 @@ MonoBehaviour:
   m_HighQualityFiltering:
     m_OverrideState: 1
     m_Value: 1
+--- !u!114 &2325148130179702663
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b145d2b9ee1ac4f846968484e7485a, type: 3}
+  m_Name: ContactShadows
+  m_EditorClassIdentifier: 
+  active: 1
+  quality:
+    m_OverrideState: 1
+    m_Value: 2
+  enable:
+    m_OverrideState: 1
+    m_Value: 1
+  length:
+    m_OverrideState: 1
+    m_Value: 0.15
+  opacity:
+    m_OverrideState: 1
+    m_Value: 1
+  distanceScaleFactor:
+    m_OverrideState: 1
+    m_Value: 0.5
+  maxDistance:
+    m_OverrideState: 1
+    m_Value: 50
+  minDistance:
+    m_OverrideState: 1
+    m_Value: 0
+  fadeDistance:
+    m_OverrideState: 1
+    m_Value: 5
+  fadeInDistance:
+    m_OverrideState: 1
+    m_Value: 0
+  rayBias:
+    m_OverrideState: 1
+    m_Value: 0.2
+  thicknessScale:
+    m_OverrideState: 1
+    m_Value: 0.15
+  m_SampleCount:
+    m_OverrideState: 1
+    m_Value: 16
 --- !u!114 &2552371983110033443
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1040,7 +1107,7 @@ MonoBehaviour:
     m_Value: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.5
+    m_Value: 0.25
   directLightingStrength:
     m_OverrideState: 1
     m_Value: 1
@@ -1115,7 +1182,7 @@ MonoBehaviour:
   active: 1
   quality:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: 3
   enabled:
     m_OverrideState: 1
     m_Value: 1
@@ -1577,10 +1644,10 @@ MonoBehaviour:
   active: 1
   mode:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 2
   meteringMode:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: 1
   luminanceSource:
     m_OverrideState: 1
     m_Value: 1
@@ -1592,10 +1659,10 @@ MonoBehaviour:
     m_Value: 0
   limitMin:
     m_OverrideState: 1
-    m_Value: -1
+    m_Value: 13.3125
   limitMax:
     m_OverrideState: 1
-    m_Value: 14.679245
+    m_Value: 15
   curveMap:
     m_OverrideState: 1
     m_Value:
@@ -1679,10 +1746,10 @@ MonoBehaviour:
     m_Value: 1
   adaptationSpeedDarkToLight:
     m_OverrideState: 1
-    m_Value: 3
+    m_Value: 1
   adaptationSpeedLightToDark:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 3
   weightTextureMask:
     m_OverrideState: 1
     m_Value: {fileID: 0}
@@ -1697,7 +1764,7 @@ MonoBehaviour:
     m_Value: 0
   centerAroundExposureTarget:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   proceduralCenter:
     m_OverrideState: 1
     m_Value: {x: 0.5, y: 0.5}
@@ -1747,7 +1814,7 @@ MonoBehaviour:
   active: 1
   quality:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: 3
   enable:
     m_OverrideState: 1
     m_Value: 1
@@ -1808,7 +1875,7 @@ MonoBehaviour:
     m_Value: 2
   m_FullResolution:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0
   sampleCount:
     m_OverrideState: 1
     m_Value: 2
@@ -1820,16 +1887,16 @@ MonoBehaviour:
     m_Value: 1
   m_HalfResolutionDenoiser:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   m_DenoiserRadius:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0.66
   m_SecondDenoiserPass:
     m_OverrideState: 1
     m_Value: 1
   m_MaxMixedRaySteps:
     m_OverrideState: 1
-    m_Value: 64
+    m_Value: 1
   receiverMotionRejection:
     m_OverrideState: 1
     m_Value: 1
